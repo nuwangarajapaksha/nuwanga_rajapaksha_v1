@@ -1,0 +1,106 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block main %}
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Featured Post -->
+        <article class="post featured">
+            <header class="major scroll-animate-up">
+                {# <span class="date">{% now "F d, Y H:i" %}</span> #}
+                <span class="date" id="live-time"></span>
+                <h2><a href="#">Sport Enthusiasm</a></h2>
+                <p>
+                    <a href="#enthusiasm">Enthusiasm</a> |
+                    <a href="#gym-life">Gym Life</a>
+                </p>
+            </header>
+
+            <a href="#" class="image main scroll-animate-down">
+                <img src="{% static 'images/pic01.jpg' %}" alt=""/>
+            </a>
+
+            <div id="enthusiasm" class="sub-article">
+                <h2 class="title scroll-animate-left">Enthusiasm</h2>
+                <p class="scroll-animate-up">
+                    I have loved sports since my childhood. During my school years, I actively participated in various
+                    sports, which helped me build a strong foundation in physical fitness and teamwork. After finishing
+                    school, I started going to the gym, and it has now become my main sport and daily routine. Through
+                    sports and fitness, I have developed important qualities such as discipline, consistency, patience,
+                    and
+                    mental strength. It has also taught me how to set goals, work hard to achieve them, and maintain a
+                    healthy balance in life. This passion for fitness has shaped my mindset, improved my confidence, and
+                    continues to positively influence both my personal growth and professional journey.
+                </p></div>
+
+            <div id="gym-life" class="sub-article">
+                <h2 class="title scroll-animate-left">GYM Life</h2>
+                <p class="scroll-animate-up">
+
+                <span class="image left" style="max-width: 30%;">
+                    <img src="{% static 'images/gym01.jpg' %}" alt="Gym"/>
+                </span>
+
+                    After my school journey, I began my gym journey with a deep passion and commitment to building a
+                    stronger and healthier version of myself. Rather than jumping straight into intense workouts, I
+                    dedicated the first two years purely to research and understanding the science behind fitness,
+                    nutrition, and bodybuilding. I studied different training methods, muscle groups, recovery
+                    techniques,
+                    and how the body responds to specific types of exercises. Over time, I developed my own personalized
+                    approach, based on how my physique responds best to training — a method that I continuously refine
+                    and
+                    improve.
+                </p>
+                <p class="scroll-animate-up">
+
+                <span class="image right" style="max-width: 30%;">
+                    <img src="{% static 'images/gym02.jpg' %}" alt="Gym"/>
+                </span>
+
+                    Today, my gym routine is not just about lifting weights; it’s about precision, form, and progress.
+                    Some
+                    of my favorite exercises include the dumbbell bench press for building chest strength and stability,
+                    lat
+                    pull-downs and pull-ups to develop a strong and wide back, and seated dumbbell curls to isolate and
+                    grow
+                    the biceps. I also enjoy double lateral raises, which help shape the shoulders and enhance upper
+                    body
+                    symmetry. These exercises not only contribute to physical development but also teach me discipline,
+                    focus, and the importance of consistent effort. My gym journey has become a lifestyle — one that
+                    empowers me mentally and physically, and constantly pushes me to become the best version of myself.
+                </p>
+
+
+{#                <div class="box alt scroll-animate-down">#}
+{#                    <div class="row gtr-30 gtr-uniform">#}
+{#                        {% for image in images_row1 %}#}
+{#                            <div class="col-2">#}
+{#                    <span class="image fit">#}
+{#                        <img src="{% static 'icons/'|add:image|add:'.svg' %}" alt="{{ image|title }}"/>#}
+{#                    </span>#}
+{#                            </div>#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{##}
+{#                    <br>#}
+{##}
+{#                    <div class="row gtr-30 gtr-uniform">#}
+{#                        {% for image in images_row2 %}#}
+{#                            <div class="col-2">#}
+{#                    <span class="image fit">#}
+{#                        <img src="{% static 'icons/'|add:image|add:'.svg' %}" alt="{{ image|title }}"/>#}
+{#                    </span>#}
+{#                            </div>#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{#                </div>#}
+            </div>
+
+            <i class="fa-solid fa-hourglass-start scroll-animate-down"></i>
+        </article>
+
+        <footer></footer>
+    </div>
+
+{% endblock %}

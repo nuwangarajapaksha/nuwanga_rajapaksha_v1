@@ -1,0 +1,71 @@
+/* messages.css */
+
+.messages {
+    list-style: none;
+    padding: 0;
+}
+
+.messages li {
+    padding: 10px 0; /* optional spacing */
+    margin-bottom: 10px;
+    font-weight: 500;
+    /* No background, only text color changes */
+}
+
+.messages li.success {
+    color: #4caf50; /* green text */
+}
+
+.messages li.error {
+    color: #f44336; /* red text */
+}
+
+.messages li.warning {
+    color: #ff9800; /* orange text */
+}
+
+.messages li.info {
+    color: #2196f3; /* blue text */
+}
+
+
+.highlighted {
+    background-color: #8DD8FF;
+    border-left: 4px solid #4E71FF;
+    padding-left: 12px;
+    transition: background-color 0.3s ease;
+}
+
+
+.scroll-animate-up {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animate-down {
+    opacity: 0;
+    transform: translateY(-60px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-animate-up.active,
+.scroll-animate-down.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-article {
+    text-align: justify;
+}
+
+.scroll-animate-left {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-animate-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
