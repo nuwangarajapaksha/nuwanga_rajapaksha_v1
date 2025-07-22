@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
 from pathlib import Path
+from concurrent_log_handler import ConcurrentTimedRotatingFileHandler
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -205,14 +206,15 @@ LOGGING = {
             'level': 'INFO',
         },
         'file': {
-            'class': 'logging.handlers.TimedRotatingFileHandler',
+            '()': ConcurrentTimedRotatingFileHandler,  # Note: this is a callable, not a string
             'formatter': 'standard',
-            'filename': os.path.join(LOG_DIR, 'app.log'),  # Always write to this file
-            'when': 'midnight',      # Rotate at midnight
-            'interval': 1,           # Every day
-            'backupCount': 30,       # Keep 30 days of logs
+            'filename': os.path.join(LOG_DIR, 'app.log'),
+            'when': 'midnight',
+            'interval': 1,
+            'backupCount': 30,
             'encoding': 'utf-8',
-            'utc': False,            # Use local time
+            'utc': False,
+            'delay': True,  # Optional: delay opening the file until first use
         },
     },
 
