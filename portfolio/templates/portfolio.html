@@ -21,7 +21,7 @@
             </header>
 
             <a href="#" class="image main scroll-animate-down">
-                <img src="{% static 'images/pic01.jpg' %}" alt=""/>
+                <img src="{% static 'images/portfolio/protfolio-main.png' %}" alt=""/>
             </a>
 
             <div id="myself" class="sub-article">
@@ -45,7 +45,7 @@
                 <p class="scroll-animate-up">
                     <a href="https://nalandacollege.lk/" target="_blank" rel="noopener noreferrer">
                         <span class="image left" style="max-width: 20%;">
-                            <img src="{% static 'images/nalanda.png' %}" alt="Nalanda College"/>
+                            <img src="{% static 'images/common/nalanda.png' %}" alt="Nalanda College"/>
                         </span>
                     </a>
                     I began my education at <b><a href="https://nalandacollege.lk/" target="_blank" rel="noopener noreferrer">Nalanda College,</a></b>
@@ -58,12 +58,12 @@
                 <p class="scroll-animate-up">
                     <a href="https://www.sqa.org.uk/sqa/70972.html" target="_blank" rel="noopener noreferrer">
                         <span class="image right" style="max-width: 20%;">
-                            <img src="{% static 'images/sqa.png' %}" alt="SQA"/>
+                            <img src="{% static 'images/common/sqa-college.png' %}" alt="SQA"/>
                         </span>
                     </a>
                     <a href="https://www.bcu.ac.uk/" target="_blank" rel="noopener noreferrer">
                         <span class="image right" style="max-width: 20%;">
-                            <img src="{% static 'images/bcu.png' %}" alt="BCU"/>
+                            <img src="{% static 'images/common/bcu-college.png' %}" alt="BCU"/>
                         </span>
                     </a>
                     Driven by my long-standing passion for software development,
@@ -83,7 +83,7 @@
                 <p class="scroll-animate-up">
                     <a href="https://www.xdoto.io/" target="_blank" rel="noopener noreferrer">
                         <span class="image left" style="max-width: 20%;">
-                            <img src="{% static 'images/xdoto-logo.png' %}" alt="Xdoto"/>
+                            <img src="{% static 'images/common/xdoto-logo.png' %}" alt="Xdoto"/>
                         </span>
                     </a>
                     I have over <b>two years of professional experience in full-stack development,</b> having started as
@@ -133,10 +133,10 @@
 
                 <div class="box alt scroll-animate-down">
                     <div class="row gtr-50 gtr-uniform">
-                        {% for icon in tech_icons_row1 %}
+                        {% for tech_icon in tech_icons %}
                             <div class="col-1">
                                 <span class="image fit">
-                                    <img src="{% static 'icons/'|add:icon|add:'.svg' %}" alt="{{ icon|title }}"/>
+                                    <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}" alt="{{ tech_icon|title }}"/>
                                 </span>
                             </div>
                         {% endfor %}
@@ -145,7 +145,7 @@
 
                 <p class="scroll-animate-up">
                     <span class="image right" style="max-width: 10%;">
-                        <img src="{% static 'images/hiking.png' %}" alt="Hiking"/>
+                        <img src="{% static 'images/portfolio/hiking.png' %}" alt="Hiking"/>
                     </span>
                     <b>Traveling</b>, especially <b>mountaineering and nature exploration,</b> fuels my creativity
                     and provides fresh inspiration. Exploring new environments <b>gives me unique perspectives</b>
@@ -157,7 +157,7 @@
                 <h2 class="title scroll-animate-left">Sports</h2>
                 <p class="scroll-animate-up">
                     <span class="image left" style="max-width: 10%;">
-                        <img src="{% static 'images/weightlifting.png' %}" alt="Weightlifting"/>
+                        <img src="{% static 'images/portfolio/weightlifting.png' %}" alt="Weightlifting"/>
                     </span>
                     I have a consistent <b>gym journey,</b> which plays an essential role in
                     <b>maintaining both my physical health and mental discipline.</b>

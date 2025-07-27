@@ -18,9 +18,9 @@
                 </p>
             </header>
 
-            <a href="#" class="image main scroll-animate-down">
-                <img src="{% static 'images/pic01.jpg' %}" alt=""/>
-            </a>
+{#            <a href="#" class="image main scroll-animate-down">#}
+{#                <img src="{% static 'images/pic01.jpg' %}" alt=""/>#}
+{#            </a>#}
 
             <!-- Commence Section -->
             <div id="commence" class="sub-article">
@@ -28,7 +28,7 @@
                 <p class="scroll-animate-up">
                     <a href="https://nalandacollege.lk/" target="_blank" rel="noopener noreferrer">
                         <span class="image left" style="max-width: 20%;">
-                            <img src="{% static 'images/nalanda.png' %}" alt="Nalanda College"/>
+                            <img src="{% static 'images/common/nalanda.png' %}" alt="Nalanda College"/>
                         </span>
                     </a>
                     My passion for programming <b>began during my school years at
@@ -50,7 +50,7 @@
 
                     <a href="https://www.facebook.com/csnclabsofficial" target="_blank" rel="noopener noreferrer">
                         <span class="image right" style="max-width: 20%;">
-                            <img src="{% static 'images/nalanda-cs.png' %}" alt="Nalanda College Computer Society"/>
+                            <img src="{% static 'images/common/nalanda-cs.png' %}" alt="Nalanda College Computer Society"/>
                         </span>
                     </a>
 
@@ -69,7 +69,7 @@
                 <p class="scroll-animate-up">
                     <a href="https://www.bcu.ac.uk/" target="_blank" rel="noopener noreferrer">
                         <span class="image left" style="max-width: 20%;">
-                            <img src="{% static 'images/bcu-logo.png' %}" alt="BCU"/>
+                            <img src="{% static 'images/common/bcu-logo.png' %}" alt="BCU"/>
                         </span>
                     </a>
                     I earned a <b><a href="https://www.bcu.ac.uk/" target="_blank" rel="noopener noreferrer">Bachelor of Science with Honours in Software
@@ -104,7 +104,7 @@
 
                     <a href="https://www.sqa.org.uk/sqa/70972.html" target="_blank" rel="noopener noreferrer">
                         <span class="image right" style="max-width: 20%;">
-                            <img src="{% static 'images/sqa-logo.png' %}" alt="SQA"/>
+                            <img src="{% static 'images/common/sqa-logo.png' %}" alt="SQA"/>
                         </span>
                     </a>
 
@@ -124,7 +124,7 @@
                 <p class="scroll-animate-up">
                     <a href="https://www.xdoto.io/" target="_blank" rel="noopener noreferrer">
                         <span class="image left" style="max-width: 20%;">
-                            <img src="{% static 'images/xdoto-logo.png' %}" alt="Xdoto"/>
+                            <img src="{% static 'images/common/xdoto-logo.png' %}" alt="Xdoto"/>
                         </span>
                     </a>
 
@@ -159,7 +159,7 @@
                 <p class="scroll-animate-up">
                     <a href="https://www.xdoto.io/" target="_blank" rel="noopener noreferrer">
                         <span class="image right" style="max-width: 25%;">
-                            <img src="{% static 'images/freelance.jpg' %}" alt="Freelance"/>
+                            <img src="{% static 'images/programming/freelance.jpg' %}" alt="Freelance"/>
                         </span>
                     </a>
 
@@ -195,10 +195,10 @@
                 <!-- Tech Icon Grid -->
                 <div class="box alt">
                     <div class="row gtr-30 gtr-uniform scroll-animate-down">
-                        {% for icon in tech_icons_row1 %}
+                        {% for tech_icon in tech_icons_row1 %}
                             <div class="col-1">
                                 <span class="image fit">
-                                    <img src="{% static 'icons/'|add:icon|add:'.svg' %}" alt="{{ icon|title }}"/>
+                                    <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}" alt="{{ tech_icon|title }}"/>
                                 </span>
                             </div>
                         {% endfor %}
@@ -207,10 +207,10 @@
                     <br>
 
                     <div class="row gtr-30 gtr-uniform scroll-animate-down">
-                        {% for icon in tech_icons_row2 %}
+                        {% for tech_icon in tech_icons_row2 %}
                             <div class="col-1">
                                 <span class="image fit">
-                                    <img src="{% static 'icons/'|add:icon|add:'.svg' %}" alt="{{ icon|title }}"/>
+                                    <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}" alt="{{ tech_icon|title }}"/>
                                 </span>
                             </div>
                         {% endfor %}
@@ -238,7 +238,7 @@
                 <header>
                     <h2><a href="#">Melioraa</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/melioraa.png' %}" alt="Melioraa"/></a>
+                <a href="#" class="image fit"><img src="{% static 'images/programming/melioraa.png' %}" alt="Melioraa"/></a>
                 <p>Melioraa is an <b>Industry 4.0 Machine Monitoring System</b> developed by <b>XdotO Concepts Pte
                     Limited.</b> Designed to enhance industrial efficiency and real-time visibility, Melioraa leverages
                     advanced technologies to <b>monitor, analyze, and optimize machine performance</b> across manufacturing
@@ -253,7 +253,7 @@
                 <header>
                     <h2><a href="#">Dialog Power App</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/dialog-power-app.png' %}"
+                <a href="#" class="image fit"><img src="{% static 'images/programming/dialog-power-app.png' %}"
                                                    alt="Dialog Power App"/></a>
                 <p>Dialog Power App is an <b>Alarms and Notification Mobile Application</b> developed by <b>XdotO
                     Concepts Pte Limited in collaboration with Dialog Axiata PLC.</b> The app is designed to <b>deliver
@@ -268,7 +268,7 @@
                 <header>
                     <h2><a href="#">Morex</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/morex.png' %}" alt="Morex"/></a>
+                <a href="#" class="image fit"><img src="{% static 'images/programming/morex.png' %}" alt="Morex"/></a>
                 <p>Morex is a <b>Process Monitoring System</b> developed by <b>XdotO Concepts Pte Limited</b> as a
                     sub-project for <b>Morex Industries.</b> Designed to <b>enhance operational visibility, the system
                     enables real-time monitoring and analysis of production processes, ensuring improved efficiency,
@@ -281,7 +281,7 @@
                 <header>
                     <h2><a href="#">NDCamera</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/ndcamera.png' %}" alt="NDCamera"/></a>
+                <a href="#" class="image fit"><img src="{% static 'images/programming/ndcamera.png' %}" alt="NDCamera"/></a>
                 <p>NDCamera is a fully functional <b>E-Commerce and M-Commerce applications,</b> individually developed
                     as my <b>final year university project.</b> Designed as an <b>online camera shop,</b> the project
                     enables users to <b>browse, purchase, and manage camera products</b> through both web and mobile platforms.
@@ -295,7 +295,7 @@
                 <header>
                     <h2><a href="#">PAMUNUWILA HARDWARE (Pvt) Ltd</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/pamunuwila-hardware.png' %}"
+                <a href="#" class="image fit"><img src="{% static 'images/programming/pamunuwila-hardware.png' %}"
                                                    alt="PAMUNUWILA HARDWARE (Pvt) Ltd"/></a>
                 <p>PAMUNUWILA HARDWARE (Pvt) Ltd is a <b>fully functional desktop application</b> developed as my
                     <b>first-year final project at university.</b> Designed for <b>Hardware Shop Management,</b> the
@@ -311,7 +311,7 @@
                 <header>
                     <h2><a href="#">ADYAPANA<br>&nbsp</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/adyapana.png' %}" alt="ADYAPANA"/></a>
+                <a href="#" class="image fit"><img src="{% static 'images/programming/adyapana.png' %}" alt="ADYAPANA"/></a>
                 <p>ADYAPANA is a simple <b>Desktop Application</b> developed as part of a <b>first-year university
                     assignment,</b> aimed at <b>Managing Educational Centers</b> efficiently. The system includes key
                     features such as <b>student management, teacher management, subject management, class management, and
@@ -336,7 +336,7 @@
                 <header>
                     <h2><a href="#">OPD Channeling</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/opd-channeling.png' %}" alt="OPD Channeling"/></a>
+                <a href="#" class="image fit"><img src="{% static 'images/programming/opd-channeling.png' %}" alt="OPD Channeling"/></a>
                 <p>OPD Channeling is a fully functional <b>Hospital Management Web Application</b> developed as part of
                     a <b>second-year university assignment.</b> The system is designed to manage key hospital
                     operations, including <b>patient handling, doctor handling, and channeling (appointment scheduling).</b>
@@ -350,7 +350,7 @@
                 <header>
                     <h2><a href="#">ImagesCave</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/imagescave.png' %}" alt="ImagesCave"/></a>
+                <a href="#" class="image fit"><img src="{% static 'images/programming/imagescave.png' %}" alt="ImagesCave"/></a>
                 <p>ImagesCave is a fully functional <b>Image Selling Web Application</b> developed as a <b>main project
                     during my second year at university.</b> The platform supports <b>both image buying and selling,</b>
                     allowing <b>photographers to upload and sell their work while customers can browse, purchase, and
@@ -364,7 +364,7 @@
                 <header>
                     <h2><a href="#">Election Sri Lanka</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/election-sri-lanka.png' %}"
+                <a href="#" class="image fit"><img src="{% static 'images/programming/election-sri-lanka.png' %}"
                                                    alt="Election Sri Lanka"/></a>
                 <p>Election Sri Lanka is a fully functional <b>Online Election System</b> developed as part of a <b>second-year
                     university assignment.</b> The system is designed to manage the complete election process digitally,
@@ -379,7 +379,7 @@
                 <header>
                     <h2><a href="#">Health First</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/helth-first.png' %}" alt="Health First"/></a>
+                <a href="#" class="image fit"><img src="{% static 'images/programming/helth-first.png' %}" alt="Health First"/></a>
                 <p>Health First is a <b>simple website</b> developed for a <b>Fitness Center</b> as my <b>first
                     university web project.</b> The site features a <b>gallery, class schedules, upcoming events, and
                     contact information,</b> providing visitors with essential details and an engaging online presence. This

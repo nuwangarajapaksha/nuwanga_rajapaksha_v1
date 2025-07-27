@@ -14,12 +14,12 @@
                     <a href="#commence">Commence</a> |
                     <a href="#studies">Studies</a> |
                     <a href="#career">Career</a> |
-                    <a href="#tech-stack">Tech Stack</a>
+                    <a href="#gears">Gears</a>
                 </p>
             </header>
 
             <a href="#" class="image main scroll-animate-down">
-                <img src="{% static 'images/pic01.jpg' %}" alt=""/>
+                <img src="{% static 'images/photography/photography-main.png' %}" alt=""/>
             </a>
 
             <!-- Commence Section -->
@@ -45,7 +45,7 @@
                     <a href="https://www.facebook.com/Nalanda.College.Photographic.Art.Society" target="_blank"
                        rel="noopener noreferrer">
                         <span class="image right" style="max-width: 20%;">
-                            <img src="{% static 'images/nalanda-pas.png' %}" alt="Nalanda College
+                            <img src="{% static 'images/common/nalanda-pas.png' %}" alt="Nalanda College
                     Photographic Art Society"/>
                         </span>
                     </a>
@@ -67,7 +67,7 @@
                 </p>
             </div>
             <!-- Higher Studies Section -->
-            <div id="higher-studies" class="sub-article">
+            <div id="studies" class="sub-article">
                 <h2 class="title scroll-animate-left">Higher Studies</h2>
 
                 <p class="scroll-animate-up">
@@ -75,7 +75,7 @@
                        target="_blank"
                        rel="noopener noreferrer">
                         <span class="image left" style="max-width: 20%;">
-                            <img src="{% static 'images/cameralk.png' %}" alt="CameraLk"/>
+                            <img src="{% static 'images/photography/cameralk-academy.png' %}" alt="CameraLk"/>
                         </span>
                     </a>
                     After completing my school education, I decided to pursue my passion for photography by enrolling in
@@ -92,7 +92,7 @@
                     <a href="https://www.facebook.com/mohan.hathnapitiya" target="_blank"
                        rel="noopener noreferrer">
                         <span class="image right" style="max-width: 20%;">
-                            <img src="{% static 'images/mohan-hathnapitiya.png' %}" alt="Mr. Mohan Hathnapitiya"/>
+                            <img src="{% static 'images/photography/mohan-hathnapitiya.png' %}" alt="Mr. Mohan Hathnapitiya"/>
                         </span>
                     </a>
                     During this course, I had the privilege of studying under <b><a
@@ -117,6 +117,10 @@
                 <P class="title scroll-animate-left"><b>The program offered specialized training in multiple photography
                     genres, including:</b></P>
                 <ul>
+                    <li class="scroll-animate-up"><b>Landscape Photography –</b> Exploring natural light, weather, and
+                        perspective to capture
+                        scenic beauty.
+                    </li>
                     <li class="scroll-animate-up"><b>Wildlife Photography –</b> Mastering patience, timing, and
                         long-lens techniques to capture
                         animals in
@@ -132,18 +136,14 @@
                         weddings,
                         cultural events, and concerts.
                     </li>
-                    <li class="scroll-animate-up"><b>Food Photography –</b> Styling and lighting techniques to create
-                        vibrant, market-ready food
-                        visuals.
-                    </li>
-                    <li class="scroll-animate-up"><b>Landscape Photography –</b> Exploring natural light, weather, and
-                        perspective to capture
-                        scenic beauty.
-                    </li>
-                    <li class="scroll-animate-up"><b>Street Photography –</b> Candidly documenting everyday life,
+                     <li class="scroll-animate-up"><b>Street Photography –</b> Candidly documenting everyday life,
                         culture, and human interaction
                         in urban
                         environments.
+                    </li>
+                    <li class="scroll-animate-up"><b>Food Photography –</b> Styling and lighting techniques to create
+                        vibrant, market-ready food
+                        visuals.
                     </li>
                 </ul>
 
@@ -219,7 +219,7 @@
             </div>
 
             <!-- Tech Stack -->
-            <div id="tech-stack" class="sub-article">
+            <div id="gears" class="sub-article">
                 <h2 class="title scroll-animate-left">Gears</h2>
                 <ul>
                     <li class="scroll-animate-up"><b>Cameras:</b> Nikon D7200 APSC</li>
@@ -234,36 +234,37 @@
 
 
                 <!-- Tech Icon Grid -->
-                <div class="box alt scroll-animate-down">
-                    <div class="row gtr-30 gtr-uniform">
-                        {% for camera in cameras_row1 %}
+                <div class="box alt">
+                    <div class="row gtr-30 gtr-uniform scroll-animate-down">
+                        {% for camera in cameras %}
                             <div class="col-4">
-                    <span class="image fit">
-                        <img src="{% static 'images/'|add:camera|add:'.jpg' %}" alt="{{ camera|title }}"/>
-                    </span>
-                            </div>
-                        {% endfor %}
-                    </div>
-
-
-                    <div class="row gtr-30 gtr-uniform">
-                        {% for lens in lenses_row2 %}
-                            <div class="col-4">
-                    <span class="image fit">
-                        <img src="{% static 'images/'|add:lens|add:'.png' %}" alt="{{ lens|title }}"/>
-                    </span>
+                                <span class="image fit">
+                                    <img src="{% static 'images/photography/'|add:camera|add:'.png' %}" alt="{{ camera|title }}"/>
+                                </span>
                             </div>
                         {% endfor %}
                     </div>
 
                     <br>
 
-                    <div class="row gtr-30 gtr-uniform">
-                        {% for icon in tech_icons_row3 %}
+                    <div class="row gtr-30 gtr-uniform scroll-animate-down">
+                        {% for lens in lenses %}
+                            <div class="col-4">
+                                <span class="image fit">
+                                    <img src="{% static 'images/photography/'|add:lens|add:'.png' %}" alt="{{ lens|title }}"/>
+                                </span>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <br>
+
+                    <div class="row gtr-30 gtr-uniform scroll-animate-down">
+                        {% for icon in tech_icons %}
                             <div class="col-2">
-                    <span class="image fit">
-                        <img src="{% static 'icons/'|add:icon|add:'.svg' %}" alt="{{ icon|title }}"/>
-                    </span>
+                                <span class="image fit">
+                                    <img src="{% static 'icons/'|add:icon|add:'.svg' %}" alt="{{ icon|title }}"/>
+                                </span>
                             </div>
                         {% endfor %}
                     </div>
@@ -274,7 +275,8 @@
             <!-- Final Paragraph -->
             <p class="scroll-animate-up">
                 In conclusion, <b>my journey in photography has been a deeply personal and continually evolving
-                experience—rooted in early passion, shaped by formal education, and refined through real-world practice.</b>
+                experience—rooted in early passion, shaped by formal education, and refined through real-world
+                practice.</b>
                 From capturing simple moments with a mobile phone to producing professional-level work across diverse
                 genres, photography has become more than just a creative outlet—it’s a way of life. With a strong
                 foundation in both the technical and artistic aspects of the craft, a growing digital presence, and a
@@ -288,160 +290,144 @@
 
         <!-- Posts -->
         <section class="posts">
-            <article class="scroll-animate-up">
+        <article class="scroll-animate-up">
                 <header>
-                    <h2><a href="#">Melioraa</a></h2>
+                    <h2><a href="#">Landscape Photography</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/melioraa.png' %}" alt="Melioraa"/></a>
-                <p>Melioraa is an <b>Industry 4.0 machine monitoring system</b> developed by <b>XdotO Concepts Pte
-                    Limited.</b> Designed to enhance industrial efficiency and real-time visibility, Melioraa leverages
-                    advanced technologies to monitor, analyze, and optimize machine performance across manufacturing
-                    environments. This innovative solution empowers factories with data-driven insights, predictive
-                    maintenance capabilities, and seamless integration with existing systems, helping businesses improve
-                    productivity and reduce downtime.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
-            </article>
-            <article class="scroll-animate-down">
-                <header>
-                    <h2><a href="#">Dialog Power App</a></h2>
-                </header>
-                <a href="#" class="image fit"><img src="{% static 'images/dialog-power-app.png' %}"
-                                                   alt="Dialog Power App"/></a>
-                <p>Dialog Power App is an <b>alarms and notification mobile application</b> developed by <b>XdotO
-                    Concepts Pte Limited in collaboration with Dialog Axiata PLC.</b> The app is designed to deliver
-                    real-time alerts and critical notifications, enabling efficient monitoring and quick response to
-                    system events. Tailored for enterprise use, the solution enhances operational awareness and ensures
-                    seamless communication within the Dialog Axiata infrastructure.</p><br>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
+               <a data-fancybox="landscape" data-caption="landscape01"
+                   href="{% static 'images/photography/landscape/landscape01.png' %}" class="image fit"><img
+                        src="{% static 'images/photography/landscape/landscape01.png' %}" alt="landscape01"/></a>
+                <div class="row gtr-30 gtr-uniform">
+                    {% for image in landscape_images %}
+                        <div class="col-6">
+                            <a
+                                    data-fancybox="landscape"
+                                    data-caption="{{ image|title }}"
+                                    href="{% static 'images/photography/landscape/'|add:image|add:'.png' %}">
+                                <span class="image fit">
+                                        <img src="{% static 'images/photography/landscape/'|add:image|add:'.png' %}"
+                                             alt="{{ image|title }}"/>
+                                </span>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
             </article>
             <article class="scroll-animate-up">
                 <header>
-                    <h2><a href="#">Morex</a></h2>
+                    <h2><a href="#">Wildlife Photography</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/morex.png' %}" alt="Morex"/></a>
-                <p>Morex is a <b>process monitoring system</b> developed by <b>XdotO Concepts Pte Limited</b> as a
-                    sub-project for <b>Morex Industries.</b> Designed to enhance operational visibility, the system
-                    enables real-time monitoring and analysis of production processes, ensuring improved efficiency,
-                    reduced downtime, and data-driven decision-making within the manufacturing environment.</p><br>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
+                <a data-fancybox="wildlife" data-caption="wildlife"
+                   href="{% static 'images/photography/wildlife/wildlife01.png' %}" class="image fit"><img
+                        src="{% static 'images/photography/wildlife/wildlife01.png' %}" alt="wildlife01"/></a>
+                <div class="row gtr-30 gtr-uniform">
+                    {% for image in wildlife_images %}
+                        <div class="col-6">
+                            <a
+                                    data-fancybox="wildlife"
+                                    data-caption="{{ image|title }}"
+                                    href="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}">
+                                <span class="image fit">
+                                        <img src="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}"
+                                             alt="{{ image|title }}"/>
+                                </span>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
             </article>
             <article class="scroll-animate-down">
                 <header>
-                    <h2><a href="#">NDCamera</a></h2>
+                    <h2><a href="#">Model Photography</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/ndcamera.png' %}" alt="NDCamera"/></a>
-                <p>NDCamera is a fully functional <b>e-commerce and m-commerce applications,</b> individually developed
-                    as my <b>final year university project.</b> Designed as an <b>online camera shop,</b> the project
-                    enables users to browse, purchase, and manage camera products through both web and mobile platforms.
-                    NDCamera showcases my end-to-end development skills, from UI/UX design to backend integration and
-                    payment processing.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
+                <a data-fancybox="model" data-caption="model01"
+                   href="{% static 'images/photography/model/model01.png' %}" class="image fit"><img
+                        src="{% static 'images/photography/model/model01.png' %}" alt="model01"/></a>
+                <div class="row gtr-30 gtr-uniform">
+                    {% for image in model_images %}
+                        <div class="col-6">
+                            <a
+                                    data-fancybox="modeling"
+                                    data-caption="{{ image|title }}"
+                                    href="{% static 'images/photography/model/'|add:image|add:'.png' %}">
+                                <span class="image fit">
+                                        <img src="{% static 'images/photography/model/'|add:image|add:'.png' %}"
+                                             alt="{{ image|title }}"/>
+                                </span>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
             </article>
             <article class="scroll-animate-up">
                 <header>
-                    <h2><a href="#">PAMUNUWILA HARDWARE (Pvt) Ltd</a></h2>
+                    <h2><a href="#">Event Photography</a></h2>
                 </header>
-                <a href="#" class="image fit"><img src="{% static 'images/pamunuwila-hardware.png' %}"
-                                                   alt="PAMUNUWILA HARDWARE (Pvt) Ltd"/></a>
-                <p>PAMUNUWILA HARDWARE (Pvt) Ltd is a <b>fully functional desktop application</b> developed as my
-                    <b>first-year final project at university.</b> Designed for <b>hardware shop management,</b> the
-                    system includes features such as inventory control, sales tracking, customer management, billing,
-                    and other essential business operations. This project demonstrates my early experience in building
-                    practical software solutions with a focus on real-world business needs.
-                </p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
+                <a data-fancybox="event" data-caption="event01"
+                   href="{% static 'images/photography/event/event01.png' %}" class="image fit"><img
+                        src="{% static 'images/photography/event/event01.png' %}" alt="event01"/></a>
+                <div class="row gtr-30 gtr-uniform">
+                    {% for image in event_images %}
+                        <div class="col-6">
+                            <a
+                                    data-fancybox="event"
+                                    data-caption="{{ image|title }}"
+                                    href="{% static 'images/photography/event/'|add:image|add:'.png' %}">
+                                <span class="image fit">
+                                        <img src="{% static 'images/photography/event/'|add:image|add:'.png' %}"
+                                             alt="{{ image|title }}"/>
+                                </span>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
             </article>
-            <article class="scroll-animate-down">
-                <header>
-                    <h2><a href="#">ADYAPANA<br>&nbsp</a></h2>
-                </header>
-                <a href="#" class="image fit"><img src="{% static 'images/adyapana.png' %}" alt="ADYAPANA"/></a>
-                <p>ADYAPANA is a simple <b>desktop application</b> developed as part of a <b>first-year university
-                    assignment,</b> aimed at <b>managing educational centers</b> efficiently. The system includes key
-                    features such as student management, teacher management, subject management, class management, and
-                    payment management. This project reflects my foundational skills in designing structured and
-                    user-friendly desktop software for administrative purposes.</p><br>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
-            </article>
-            {#             <article>#}
-            {#                <header>#}
-            {#                    <h2><a href="#">Calculator</a></h2>#}
-            {#                </header>#}
-            {#                <a href="#" class="image fit"><img src="{% static 'images/pic07.jpg' %}" alt=""/></a>#}
-            {#                <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque#}
-            {#                    venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>#}
-            {#                <ul class="actions special">#}
-            {#                    <li><a href="#" class="button">Full Story</a></li>#}
-            {#                </ul>#}
-            {#            </article>#}
-            <article class="scroll-animate-up">
-                <header>
-                    <h2><a href="#">OPD Channeling</a></h2>
-                </header>
-                <a href="#" class="image fit"><img src="{% static 'images/opd-channeling.png' %}" alt="OPD Channeling"/></a>
-                <p>OPD Channeling is a fully functional <b>hospital management web application</b> developed as part of
-                    a <b>second-year university assignment.</b> The system is designed to manage key hospital
-                    operations, including patient handling, doctor handling, and channeling (appointment scheduling).
-                    This project demonstrates my foundational skills in developing real-world healthcare solutions using
-                    web technologies with a focus on usability and efficiency.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
-            </article>
-            <article class="scroll-animate-down">
-                <header>
-                    <h2><a href="#">ImagesCave</a></h2>
-                </header>
-                <a href="#" class="image fit"><img src="{% static 'images/imagescave.png' %}" alt="ImagesCave"/></a>
-                <p>ImagesCave is a fully functional <b>image selling web application</b> developed as a <b>main project
-                    during my second year at university.</b> The platform supports <b>both image buying and selling,</b>
-                    allowing photographers to upload and sell their work while customers can browse, purchase, and
-                    download high-quality images. This project highlights my skills in building complete e-commerce
-                    solutions with user roles, secure transactions, and media handling capabilities.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
-            </article>
-            <article class="scroll-animate-up">
-                <header>
-                    <h2><a href="#">Election Sri Lanka</a></h2>
-                </header>
-                <a href="#" class="image fit"><img src="{% static 'images/election-sri-lanka.png' %}"
-                                                   alt="Election Sri Lanka"/></a>
-                <p>Election Sri Lanka is a fully functional <b>online election system</b> developed as part of a <b>second-year
-                    university assignment.</b> The system is designed to manage the complete election process digitally,
-                    including voter registration, candidate management, secure voting, and result generation. This
-                    project demonstrates my ability to develop secure and efficient web-based applications for
-                    real-world use cases.</p>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
-            </article>
-            <article class="scroll-animate-down">
-                <header>
-                    <h2><a href="#">Health First</a></h2>
-                </header>
-                <a href="#" class="image fit"><img src="{% static 'images/helth-first.png' %}" alt="Health First"/></a>
-                <p>Health First is a <b>simple website</b> developed for a <b>fitness center</b> as my <b>first
-                    university web project.</b> The site features a gallery, class schedules, upcoming events, and
-                    contact information, providing visitors with essential details and an engaging online presence. This
-                    project laid the foundation for my skills in web development and user experience design.</p><br>
-                <ul class="actions special">
-                    <li><a href="#" class="button">Full Story</a></li>
-                </ul>
-            </article>
+{#            <article class="scroll-animate-down">#}
+{#                <header>#}
+{#                    <h2><a href="#">Street Photography</a></h2>#}
+{#                </header>#}
+{#                <a data-fancybox="gallery" data-caption="wildlife01"#}
+{#                   href="{% static 'images/photography/wildlife/wildlife01.png' %}" class="image fit"><img#}
+{#                        src="{% static 'images/photography/wildlife/wildlife01.png' %}" alt="wildlife01"/></a>#}
+{#                <div class="row gtr-30 gtr-uniform">#}
+{#                    {% for image in wildlife_images %}#}
+{#                        <div class="col-6">#}
+{#                            <a#}
+{#                                    data-fancybox="gallery"#}
+{#                                    data-caption="{{ image|title }}"#}
+{#                                    href="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}">#}
+{#                                <span class="image fit">#}
+{#                                        <img src="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}"#}
+{#                                             alt="{{ image|title }}"/>#}
+{#                                </span>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#            </article>#}
+{#         <article class="scroll-animate-down">#}
+{#                <header>#}
+{#                    <h2><a href="#">Food Photography</a></h2>#}
+{#                </header>#}
+{#                <a data-fancybox="gallery" data-caption="wildlife01"#}
+{#                   href="{% static 'images/photography/wildlife/wildlife01.png' %}" class="image fit"><img#}
+{#                        src="{% static 'images/photography/wildlife/wildlife01.png' %}" alt="wildlife01"/></a>#}
+{#                <div class="row gtr-30 gtr-uniform">#}
+{#                    {% for image in wildlife_images %}#}
+{#                        <div class="col-6">#}
+{#                            <a#}
+{#                                    data-fancybox="gallery"#}
+{#                                    data-caption="{{ image|title }}"#}
+{#                                    href="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}">#}
+{#                                <span class="image fit">#}
+{#                                        <img src="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}"#}
+{#                                             alt="{{ image|title }}"/>#}
+{#                                </span>#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#            </article>#}
         </section>
 
         <footer></footer>
