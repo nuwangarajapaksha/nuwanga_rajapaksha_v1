@@ -125,3 +125,23 @@ Full-Stack Software Engineer
 ## License
 
 Would you like me to also create a matching `LICENSE` file for MIT? Let me know!
+
+
+
+
+https://www.pythonanywhere.com/user/nuwangarajapaksha/files/var/www/nuwangarajapaksha_pythonanywhere_com_wsgi.py?edit
+
+import os
+import sys
+
+# Add your project directory to the sys.path
+project_home = '/home/nuwangarajapaksha/nuwanga_rajapaksha_v1'
+if project_home not in sys.path:
+    sys.path.insert(0, project_home)
+
+# Set environment variable for Django settings module
+os.environ['DJANGO_SETTINGS_MODULE'] = 'nuwanga_rajapaksha_v1.settings'
+
+# Import Django application
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
