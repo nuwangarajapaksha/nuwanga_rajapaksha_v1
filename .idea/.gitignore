@@ -7,3 +7,9 @@
 /dataSources/
 /dataSources.local.xml
 wsgi.py
+# Ignore log files
+*.log
+logs/
+*.bak
+*.tmp
+
