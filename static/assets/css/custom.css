@@ -1,34 +1,40 @@
-/* messages.css */
-
+/* ================================================
+   Section: Flash Messages
+   Description: Styling for success, error, warning, and info messages
+================================================== */
 .messages {
     list-style: none;
     padding: 0;
 }
 
 .messages li {
-    padding: 10px 0; /* optional spacing */
+    padding: 10px 0; /* Optional spacing between messages */
     margin-bottom: 10px;
     font-weight: 500;
-    /* No background, only text color changes */
+    /* No background, only text color indicates message type */
 }
 
 .messages li.success {
-    color: #4caf50; /* green text */
+    color: #4caf50; /* Green for success messages */
 }
 
 .messages li.error {
-    color: #f44336; /* red text */
+    color: #f44336; /* Red for error messages */
 }
 
 .messages li.warning {
-    color: #ff9800; /* orange text */
+    color: #ff9800; /* Orange for warning messages */
 }
 
 .messages li.info {
-    color: #2196f3; /* blue text */
+    color: #2196f3; /* Blue for informational messages */
 }
 
 
+/* ================================================
+   Section: Highlighted Elements
+   Description: Used to highlight sections or elements with a left border
+================================================== */
 .highlighted {
     background-color: #8DD8FF;
     border-left: 4px solid #4E71FF;
@@ -37,35 +43,104 @@
 }
 
 
+/* ================================================
+   Section: Scroll Animations
+   Description: Animate elements when scrolling into view
+================================================== */
+
+/* Animate from bottom to top */
 .scroll-animate-up {
     opacity: 0;
     transform: translateY(60px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
+/* Animate from top to bottom */
 .scroll-animate-down {
     opacity: 0;
     transform: translateY(-60px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.scroll-animate-up.active,
-.scroll-animate-down.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.sub-article {
-    text-align: justify;
-}
-
+/* Animate from right to left */
 .scroll-animate-left {
     opacity: 0;
     transform: translateX(60px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+/* Active class applied when element is visible */
+.scroll-animate-up.active,
+.scroll-animate-down.active,
 .scroll-animate-left.active {
     opacity: 1;
     transform: translateX(0);
 }
+
+.scroll-animate-up.active,
+.scroll-animate-down.active {
+    transform: translateY(0);
+}
+
+
+/* ================================================
+   Section: Sub Article Formatting
+   Description: Ensures justified text alignment
+================================================== */
+.sub-article {
+    text-align: justify;
+}
+
+
+/* ================================================
+   Section: Modal Pop-up
+   Description: Reusable modal structure and styling
+================================================== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 2% auto;
+    padding: 50px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 10px;
+    position: relative;
+    max-height: 90vh; /* limits height */
+    overflow-y: auto; /* enables vertical scroll */
+    animation: slideFadeIn 0.4s ease forwards;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

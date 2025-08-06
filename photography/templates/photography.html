@@ -317,7 +317,7 @@
                 <header>
                     <h2><a href="#">Wildlife Photography</a></h2>
                 </header>
-                <a data-fancybox="wildlife" data-caption="wildlife"
+                <a data-fancybox="wildlife" data-caption="wildlife01"
                    href="{% static 'images/photography/wildlife/wildlife01.png' %}" class="image fit"><img
                         src="{% static 'images/photography/wildlife/wildlife01.png' %}" alt="wildlife01"/></a>
                 <div class="row gtr-30 gtr-uniform">
@@ -347,7 +347,7 @@
                     {% for image in model_images %}
                         <div class="col-6">
                             <a
-                                    data-fancybox="modeling"
+                                    data-fancybox="model"
                                     data-caption="{{ image|title }}"
                                     href="{% static 'images/photography/model/'|add:image|add:'.png' %}">
                                 <span class="image fit">

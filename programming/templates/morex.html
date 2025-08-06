@@ -1,0 +1,136 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">Morex – Process Monitoring System</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Full-Stack Software Engineer<br>
+        <b>Technology Stack:</b> PHP, MySQL, VueJS, JavaScript, HTML, CSS, Bootstrap, Grafana, Git, GitLab, Jira, Agile
+    </p>
+</header>
+
+<a data-fancybox="morex" data-caption="morex01"
+   href="{% static 'images/programming/morex/morex01.png' %}" class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/morex/morex01.png' %}" alt="melioraa01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">Morex is a comprehensive <b>Process Monitoring System developed by XdotO Concepts Pte
+    Limited
+    as a sub-project for Morex Industries.</b> Designed as a web-based application, it <b>streamlines and digitizes the
+    production workflows and operational monitoring of industrial chemical and material processing.</b> The system
+    enables
+    users to
+    manage <b>end-to-end production workflow sand sub-production workflows, inventory, error corrections, history
+        tracking, alarms, reporting, real-time monitoring, and graphical visualizations through a role-based
+        interface.</b></p>
+
+<p class="scroll-animate-up">The application supports <b>five parallel production workflows, referred to as "Reactors."
+    Each reactor represents a complete production line involving multiple steps—such as machine status checks, material
+    and chemical addition, and data logging—with predefined templates to simplify execution.</b> Users can interact with
+    each <b>workflow in real time, monitor progress, and handle deviations or alarms as needed.</b></p>
+
+<p class="scroll-animate-up">To enhance operational visibility, the system enables <b>real-time analysis
+    of
+    production processes, ensuring improved efficiency, reduced downtime, and data-driven decision-making within the
+    manufacturing environment.</b></p>
+
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<p class="scroll-animate-up">The system architecture is divided into two major components:</p>
+<ul>
+    <li class="scroll-animate-up">The application is built on a monolithic <b>PHP backend with VueJS, JavaScript, HTML,
+        CSS
+        and Bootstrap for the frontend.</b>
+        <b>MySQL is used as the relational database</b> to store production data, templates, inventory logs, and more.
+        <b>Grafana was integrated into the system to visualize live sensor data such as machine temperature, thresholds,
+            and other key metrics.</b> The entire application is <b>deployed on a Linux-based on-premise server.</b>
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<ul>
+    <li class="scroll-animate-up">Role-based sign-in and access control for secure multi-user operations</li>
+    <li class="scroll-animate-up">Production section featuring five parallel workflow reactors with real-time progress
+        indicators
+    </li>
+    <li class="scroll-animate-up">Predefined templates to standardize production processes and improve usability</li>
+    <li class="scroll-animate-up">Inventory module to track availability and usage of materials and chemicals</li>
+    <li class="scroll-animate-up">History section with searchable logs and summary reports of completed productions</li>
+    <li class="scroll-animate-up">Real-time machine and reactor monitoring, including temperature and operational
+        status
+    </li>
+    <li class="scroll-animate-up">Job sheet module for sub-production documentation and tracking</li>
+    </li>
+    <li class="scroll-animate-up">Datalogger status monitoring with live sensor data visualized via Grafana</li>
+    <li class="scroll-animate-up">Error correction module for resolving workflow issues post-execution</li>
+    <li class="scroll-animate-up">Alarms and notifications system with escalation handling and response management</li>
+    <li class="scroll-animate-up">Reporting section with multiple report types including production, inventory, and job
+        sheets
+    </li>
+    <li class="scroll-animate-up">Admin panel for managing users, templates, materials, and chemicals</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As a Full-Stack Developer (initially during my internship and later as the project
+    lead):</p>
+<ul>
+    <li class="scroll-animate-up">Diagnosed and resolved existing issues to make the application stable and
+        production-ready
+    </li>
+    <li class="scroll-animate-up">Designed the full system architecture including database schema and frontend-backend
+        structure
+    </li>
+    <li class="scroll-animate-up">Developed web application components and interfaces using VueJS, JavaScript, HTML,
+        CSS, and Bootstrap, along with PHP-based backend APIs.
+    </li>
+    <li class="scroll-animate-up">Created dynamic Grafana dashboards for real-time sensor visualizations</li>
+    <li class="scroll-animate-up">Negotiated and gathered requirements directly from the client for iterative
+        improvements
+    </li>
+    <li class="scroll-animate-up">Handled deployment on the client’s Linux server environment</li>
+    <li class="scroll-animate-up">Provided ongoing client support, bug fixing, and error handling</li>
+    <li class="scroll-animate-up">Led the development team, assigned tasks, and mentored junior developers</li>
+    <li class="scroll-animate-up">Used Git and GitLab for version control and CI/CD processes</li>
+    <li class="scroll-animate-up">Managed tasks and sprint planning using Jira and followed Agile methodology to ensure
+        iterative delivery and client feedback integration
+    </li>
+    <li class="scroll-animate-up">Ensured that the application aligned with client expectations and maintained high
+        usability
+    </li>
+    <li class="scroll-animate-up">Applied leadership, critical thinking, communication, and problem-solving skills to successfully manage and deliver the project</li>
+</ul>
+
+<h3 class="scroll-animate-left">Clients & Implementation</h3>
+<p class="scroll-animate-up">This system has been fully implemented at Morex Industries and actively supports their
+    daily operations by improving efficiency, traceability, and real-time visibility of production processes.</p>
+
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="morex"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/morex/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/morex/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

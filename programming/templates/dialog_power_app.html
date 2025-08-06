@@ -1,0 +1,129 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">Dialog Power App – Alarm and Notification Management System</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Full-Stack Software Engineer<br>
+        <b>Technology Stack:</b> Java, Spring Boot, MySQL, Hibernate, JPA,  Microservices, ReactJS, Redux, JavaScript, HTML,
+        CSS, Material-UI, Bootstrap, Flutter, Android, JSON, Postman, Swagger, JUnit, Git, GitLab, Jira, Agile, AWS,
+        Docker
+    </p>
+</header>
+
+<a data-fancybox="dialog_power_app" data-caption="dialog_power_app01"
+   href="{% static 'images/programming/dialog_power_app/dialog-power-app01.png' %}"
+   class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/dialog_power_app/dialog-power-app01.png' %}" alt="melioraa01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">Dialog Power App is a mission-critical mobile and web-based application <b>developed by
+    XdotO
+    Concepts Pte Limited in collaboration with Dialog Axiata PLC,</b> Sri Lanka’s leading telecom provider. This system
+    was
+    designed to modernize the <b>alarm and notification management</b> process across Dialog’s extensive
+    infrastructure—including signal towers, distribution centers, maintenance sites and etc.</p>
+
+<p class="scroll-animate-up">The application enables field officers, such as site managers and regional managers, to
+    <b>receive, track, and respond to various real-time alarms and notifications—including theft alerts, low battery
+        warnings, and maintenance requests.</b> It improves operational responsiveness, facilitates task coordination,
+    and
+    generates actionable insights for management.</p>
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<p class="scroll-animate-up">The system architecture consists of three main components:</p>
+<ul>
+    <li class="scroll-animate-up"><b>Mobile App:</b> Deployed to officers in the field for
+        <b>real-time alarm monitoring, acknowledgment, and task processing.</b> Built with <b>Flutter</b> for cross-platform support
+        and <b>Native Android</b> for optimized performance.
+    </li>
+    <li class="scroll-animate-up"><b>Admin Web Panel:</b> Used by administrators to <b>manage users,
+        monitor site-level activities, generate reports, and review performance analytics.</b> Developed with <b>ReactJS and
+        Redux, styled using HTML, CSS, Material-UI, and Bootstrap.</b>
+    </li>
+    <li class="scroll-animate-up"><b>Backend Platform:</b> Built using a <b>microservices
+        architecture,</b> the backend handles <b>alarm processing, user and role management, workflow handling, and analytics.</b>
+        Implemented with <b>Java and Spring Boot, using MySQL as the database, with JPA and Hibernate for ORM, and JSON for data communication</b> between services and the frontend.
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<ul>
+    <li class="scroll-animate-up">Real-time alarm creation and notification handling (manual and automated via sensors
+        and machines)
+    </li>
+    <li class="scroll-animate-up">Alarm types include theft, intrusion, battery low, maintenance requests, and etc</li>
+    <li class="scroll-animate-up">Enabling efficient monitoring and quick response to system events</li>
+    <li class="scroll-animate-up">Role-based task routing for efficient response workflows</li>
+    <li class="scroll-animate-up">Admin dashboard with activity logs, performance tracking, and reporting</li>
+    <li class="scroll-animate-up">User authentication, authorization, and role-based access control</li>
+    <li class="scroll-animate-up">Automated daily and historical analysis reports</li>
+    <li class="scroll-animate-up">Robust error handling, diagnostics, and system monitoring</li>
+    <li class="scroll-animate-up">Cloud deployment via Docker and AWS for scalability and availability</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As a Full-Stack Developer on the Dialog Power App project:</p>
+<ul>
+    <li class="scroll-animate-up">Developed and maintained RESTful APIs for alarm lifecycle management, analytics, and
+        system administration using Java and Spring Boot
+    </li>
+    <li class="scroll-animate-up">Designed and implemented UI components, user management, site management, and
+        reporting views for the admin dashboard using ReactJS, JavaScript, HTML, CSS, Material-UI, and Bootstrap.
+    </li>
+    <li class="scroll-animate-up">Utilized Redux for client-server communication and JSON for structured data handling
+    </li>
+    <li class="scroll-animate-up">Built automated daily analysis reports, supporting informed decision-making</li>
+    <li class="scroll-animate-up">Created and optimized MySQL queries and applied Hibernate and JPA ORM for scalable database
+        access
+    </li>
+    <li class="scroll-animate-up">Used Postman for API testing, Swagger for documentation, and JUnit for backend unit
+        testing
+    </li>
+    <li class="scroll-animate-up">Designed and managed Docker images for backend services and deployed to AWS</li>
+    <li class="scroll-animate-up">Used Git and GitLab for version control and CI/CD workflows.</li>
+    <li class="scroll-animate-up">Performed day-to-day activities such as diagnostics, debugging, and user management
+    </li>
+    <li class="scroll-animate-up">Collaborated in an Agile development environment with the Dialog tech team, actively
+        using Jira for task management.
+    </li>
+    <li class="scroll-animate-up">Provided leadership, critical thinking, problem-solving, communication, and architectural insights to ensure a reliable, maintainable, and user-focused application
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Clients & Implementation</h3>
+<p class="scroll-animate-up">The Dialog Power App is actively used by Dialog Axiata PLC across its operational sites,
+    empowering field teams with real-time insight and actionability for critical infrastructure monitoring and
+    response.</p>
+<p class="scroll-animate-up">Dialog’s internal team handled sensor installations, server/network security, and officer
+    training, while the XdotO team—including myself—focused on end-to-end software development and deployment.</p>
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="dialog_power_app"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/dialog_power_app/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/dialog_power_app/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

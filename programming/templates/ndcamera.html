@@ -1,0 +1,143 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">NDCamera – E-Commerce & M-Commerce Camera Selling Platform</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Full-Stack Software Engineer (Solo Project)<br>
+        <b>Technology Stack:</b> Java, Java EE, MySQL, Hibernate, JPA, JavaScript, HTML, CSS, Bootstrap, JSON, Axios, Android,
+        Firebase, Google Authentication, Mail Sender Service, PayHere Payment Gateway</p>
+</header>
+
+<a data-fancybox="ndcamera" data-caption=ndcamera01"
+   href="{% static 'images/programming/ndcamera/ndcamera01.png' %}" class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/ndcamera/ndcamera01.png' %}" alt="melioraa01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">NDCamera is a comprehensive <b>camera-selling platform developed as a final year university
+    project.</b> The solution consists of two integrated components: a web-based <b>e-commerce application and a mobile
+    m-commerce Android application,</b> both designed to deliver a user-friendly and feature-rich online shopping
+    experience
+    for camera products.</p>
+
+<p class="scroll-animate-up">The platform includes a <b>customer-facing interface with modern shopping functionalities
+    as
+    well as an admin panel for complete store management.</b> The solution provides <b>real-time product search, order
+    tracking, secure checkout, and personalized user experiences.</b> Both the web and mobile apps are <b>developed
+    independently</b> and function as complementary systems.</p>
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<p class="scroll-animate-up">The system is designed with two separate components:</p>
+<ul>
+    <li class="scroll-animate-up"><b>E-Commerce Web Application:</b>
+        Built using <b>Java EE,</b> this component includes a <b>JSP/Servlet-based MVC architecture for backend
+            services,</b>
+        integrates <b>MySQL for database operations, and uses Hibernate and JPA for ORM.</b> The frontend is built using
+        <b>HTML,
+            CSS, JavaScript, and  Bootstrap, utilizing JSON and Axios for efficient client-server communication.</b> The application
+        also
+        includes a <b>built-in mail sender service</b> for order confirmations and
+        admin notifications, along with <b>PayHere Payment Gateway</b> integration for secure online transactions.</b>
+    </li>
+    <li class="scroll-animate-up"><b>M-Commerce Mobile Application:</b>
+        Developed using <b>Android (Java)</b> and integrated with <b>Firebase Realtime Database.</b>
+        <b>Google Authentication Service</b>s are used to enable quick and secure login functionality, and <b>PayHere
+            Payment Gateway</b> is
+        integrated to support secure in-app payments.
+
+
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<p class="scroll-animate-up">User Side (Both Web & Mobile):</p>
+<ul>
+    <li class="scroll-animate-up">User registration and login (manual & Google sign-in for mobile)</li>
+    <li class="scroll-animate-up">Profile management</li>
+    <li class="scroll-animate-up">Product search and category-wise filtering</li>
+    <li class="scroll-animate-up">Product view with details and images</li>
+    <li class="scroll-animate-up">Add to cart and wishlist</li>
+    <li class="scroll-animate-up">Secure checkout with PayHere Payment Gateway and email confirmation</li>
+    <li class="scroll-animate-up">Order history tracking</li>
+    <li class="scroll-animate-up">Blog access and contact details</li>
+</ul>
+<p class="scroll-animate-up">Admin Side (Web Only):</p>
+<ul>
+    <li class="scroll-animate-up">Admin profile and authentication</li>
+    <li class="scroll-animate-up">Product and brand management</li>
+    <li class="scroll-animate-up">Order management with automated email notifications</li>
+    <li class="scroll-animate-up">User management</li>
+    <li class="scroll-animate-up">Business and store settings configuration</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As the sole developer and project lead:</p>
+<ul>
+    <li class="scroll-animate-up">Designed and architected the entire system structure and data flow for both web and
+        mobile components.
+    </li>
+    <li class="scroll-animate-up">Developed the E-Commerce Web Application using Java EE (JSP/Servlets) for backend
+        logic, HTML, CSS, JavaScript, and JavaScript for the frontend, and database interaction using MySQL, leveraging Hibernate
+        and JPA for efficient ORM.
+    </li>
+    <li class="scroll-animate-up">Built the M-Commerce Android Mobile Application using Java (Android SDK), with
+        Firebase Realtime Database and Firebase Authentication for real-time user and product data management.
+    </li>
+    <li class="scroll-animate-up">Integrated PayHere Payment Gateway into both platforms for secure checkout flow.</li>
+    <li class="scroll-animate-up">Implemented Google Authentication on the mobile app for enhanced login and user
+        experience.
+    </li>
+    <li class="scroll-animate-up">Used JSON as the data format and Axios for structured and efficient client-server
+        communication in the web application.
+    </li>
+    <li class="scroll-animate-up">Developed a Mail Sender Service to send order confirmations and admin notifications
+        via email.
+    </li>
+    <li class="scroll-animate-up">Ensured responsive UI/UX and optimized database queries for better performance.</li>
+    <li class="scroll-animate-up">Configured admin and user access controls along with email notification systems.</li>
+    <li class="scroll-animate-up">Documented the system thoroughly for academic evaluation, including architecture
+        diagrams and code walkthrough.
+    </li>
+    <li class="scroll-animate-up">Presented the project during the final viva with a live demo, demonstrating real-world
+        problem-solving, full-stack development, and software engineering principles.
+    </li>
+    <li class="scroll-animate-up">Demonstrated strong soft skills including self-motivation, planning, adaptability,
+        critical thinking, and effective presentation.
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Clients & Implementation</h3>
+<p class="scroll-animate-up">This project was successfully presented as the capstone project for the Bachelor’s degree
+    program in Software Engineering at Birmingham City University, demonstrating full-cycle software development
+    capabilities and advanced understanding of both web and mobile platforms.</p>
+
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="ndcamera"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/ndcamera/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/ndcamera/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
