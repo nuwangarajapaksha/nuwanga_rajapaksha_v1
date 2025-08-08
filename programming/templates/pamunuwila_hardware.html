@@ -1,0 +1,118 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">PAMUNUWILA HARDWARE (Pvt) Ltd – Desktop-Based Hardware Shop Management System</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Full-Stack Software Engineer<br>
+        <b>Technology Stack:</b> Java, Java Swing, MySQL, Jasper Reports, JUnit</p>
+</header>
+
+<a data-fancybox="pamunuwila_hardware" data-caption="pamunuwila_hardware01"
+   href="{% static 'images/programming/pamunuwila_hardware/pamunuwila-hardware01.png' %}"
+   class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/pamunuwila_hardware/pamunuwila-hardware01.png' %}" alt="melioraa01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">PAMUNUWILA HARDWARE is a comprehensive <b>desktop-based hardware shop management system
+    developed for PAMUNUWILA HARDWARE (Pvt) Ltd.</b> This was <b>an individual project I undertook for my 1st-year final
+    project at university.</b> The system was designed to digitize and streamline all operational activities of the hardware
+    business, from <b>user and inventory management to sales, delivery, and financial reporting.</b></p>
+
+<p class="scroll-animate-up">The solution serves as an all-in-one tool for the daily operations of the business,
+    providing <b>seamless management of products, stock levels, purchases, sales, deliveries, and customer interactions,
+    while maintaining a centralized, secure database.</b> It <b>replaces manual recordkeeping with a highly organized,
+    automated, and scalable system.</b></p>
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<ul>
+    <li class="scroll-animate-up">This desktop-based application is built using <b>Java and Java Swing</b> for the frontend
+        user interface, backed by <b>MySQL for structured data storage. Jasper Reports is used for generating invoices,
+        bills, and all historical reports,</b> including daily, monthly, and yearly summaries.</li>
+    <li class="scroll-animate-up">The system is modularly designed, allowing each functional domain to operate
+        independently yet cohesively as part of the overall system.</li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<ul>
+    <li class="scroll-animate-up">Login, registration, and secure user management</li>
+    <li class="scroll-animate-up">Create and manage user roles and access levels</li>
+    <li class="scroll-animate-up">Store and manage supplier details and associated companies</li>
+    <li class="scroll-animate-up">Add and track items, real-time stock updates, low stock alerts</li>
+    <li class="scroll-animate-up">Manage incoming goods and update stock accordingly</li>
+    <li class="scroll-animate-up">Handle transactions, customer records, and purchase history</li>
+    <li class="scroll-animate-up">Track delivery orders and manage transportation logistics</li>
+    <li class="scroll-animate-up">Secure data backup and restoration for disaster recovery</li>
+    <li class="scroll-animate-up">Generate and print all necessary documents using Jasper Reports</li>
+    <li class="scroll-animate-up">Access past transactions and analytics for business insights</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As the sole developer of this project, I was responsible for the entire development
+    lifecycle:</p>
+<ul>
+    <li class="scroll-animate-up">Conducted requirement analysis, created database schema, and defined the modular
+        architecture
+    </li>
+    <li class="scroll-animate-up">Built the complete desktop UI using Java Swing, focusing on user experience and ease
+        of use
+    </li>
+    <li class="scroll-animate-up">Developed all business logic, database interaction modules, and integrated MySQL for
+        persistent data storage
+    </li>
+    <li class="scroll-animate-up">Created dynamic, printable invoices and reports using Jasper Reports for sales,
+        inventory, deliveries, and backups
+    </li>
+    <li class="scroll-animate-up">Performed unit and integration testing across modules to ensure a bug-free and
+        reliable application
+    </li>
+    <li class="scroll-animate-up">Used JUnit for unit testing and ensured robustness through extensive debugging and
+        validation
+    </li>
+    <li class="scroll-animate-up">Delivered the project with full technical documentation and deployment-ready setup
+    </li>
+    <li class="scroll-animate-up">utilized my leadership, critical thinking, problem-solving, and situation-handling
+        skills to manage the entire development process efficiently, overcome challenges, and deliver a fully
+        functional, professional-grade solution.
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Clients & Implementation</h3>
+<p class="scroll-animate-up">This project was successfully deployed at <b>PAMUNUWILA HARDWARE (Pvt) Ltd</b> and has been
+    actively used to manage their daily business operations. In addition to serving a real client, it was also submitted
+    and presented as <b>my final project for the first year of my university studies.</b> This dual-purpose project provided
+    valuable real-world experience in understanding client needs, delivering production-ready software, and ensuring
+    customer satisfaction. It significantly strengthened my practical development skills and my ability to independently
+    deliver a full-scale commercial application—bridging the gap between academic knowledge and professional-level
+    software engineering.</p>
+
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="pamunuwila_hardware"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/pamunuwila_hardware/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/pamunuwila_hardware/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
