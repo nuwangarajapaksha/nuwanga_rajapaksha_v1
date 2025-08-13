@@ -1,0 +1,104 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">Election Sri Lanka – Online Election Platform</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Full-Stack Software Engineer (Solo Project)<br>
+        <b>Technology Stack:</b> PHP, MySQL, JavaScript, HTML, CSS, Bootstrap</p>
+</header>
+
+<a data-fancybox="election-sri-lanka" data-caption="election-sri-lanka01"
+   href="{% static 'images/programming/election_sri_lanka/election-sri-lanka01.png' %}"
+   class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/election_sri_lanka/election-sri-lanka01.png' %}" alt="election-sri-lanka01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">Election Sri Lanka is a <b>fully functional Online Election Management Platform developed as a
+    solo second-year university assignment.</b> The system is designed to <b>digitize and streamline the entire election
+    process, from voter registration to secure voting and automatic result generation.</b></p>
+
+<p class="scroll-animate-up">The platform enables <b>voter management, candidate management, party management, and position
+    handling, ensuring a smooth and transparent election workflow.Voters can register and login using their National
+    Identity
+    Card (NIC) number and cast votes for their preferred parties and candidates.</b>  The system also
+    features an integrated guideline page to assist users.</p>
+
+<p class="scroll-animate-up">On the administrative side, <b>admins can register and log in to manage all aspects of the
+    election, including administrators, candidates, parties, positions, voters, and results.</b> The <b>result computation
+    process is automated, eliminating the possibility of human error and increasing election credibility.</b></p>
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<ul>
+    <li class="scroll-animate-up">The application is built using a <b>PHP backend for server-side processing, integrated
+        with MySQL as the relational database to store voter records, election data, and results. The frontend leverages
+        HTML, CSS, JavaScript, and Bootstrap to provide a responsive, user-friendly interface.</b> The system follows a
+        modular approach to separate core functionalities for voters and administrators, ensuring maintainability and
+        scalability.
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<p class="scroll-animate-up">Voter Side:</p>
+<ul>
+    <li class="scroll-animate-up">NIC-validated registration and login with user profile</li>
+    <li class="scroll-animate-up">Cast votes for parties and candidates</li>
+    <li class="scroll-animate-up">Access to a guideline page for election instructions</li>
+</ul>
+<ul>
+    <p class="scroll-animate-up">Admin Side:</p>
+    <li class="scroll-animate-up">Registration, secure login, and profile</li>
+    <li class="scroll-animate-up">Manage administrators, candidates, parties, positions, and voters</li>
+    <li class="scroll-animate-up">Add candidates and parties to the system</li>
+    <li class="scroll-animate-up">Automatic result generation after voting ends</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As the sole developer of the project:</p>
+<ul>
+    <li class="scroll-animate-up">Designed the complete system architecture and database schema</li>
+    <li class="scroll-animate-up">Implemented backend logic in PHP and integrated it with the MySQL database</li>
+    <li class="scroll-animate-up">Developed a fully responsive frontend using HTML, CSS, JavaScript, and Bootstrap</li>
+    <li class="scroll-animate-up">Implemented secure login and registration processes for voters and admins</li>
+    <li class="scroll-animate-up">Built automated result calculation logic for election outcomes</li>
+    <li class="scroll-animate-up">Applied critical thinking and problem-solving skills to overcome development
+        challenges
+    </li>
+    <li class="scroll-animate-up">Fully documented the project and successfully demonstrated it at the university</li>
+</ul>
+
+<h3 class="scroll-animate-left">Clients & Implementation</h3>
+<p class="scroll-animate-up">This project was presented as one of <b>my second-year university assignment,</b>
+    showcasing my ability to independently design and deliver a fully functional web-based election system. It reflects
+    industry-relevant skills in system design, backend and frontend development, database management, and security
+    implementation, applicable to real-world e-governance systems.</p>
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="election-sri-lanka"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/election_sri_lanka/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/election_sri_lanka/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

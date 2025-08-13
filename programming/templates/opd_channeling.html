@@ -1,0 +1,118 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">OPD Channeling – E-Channeling Web Platform</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Full-Stack Software Engineer (Solo Project)<br>
+        <b>Technology Stack:</b> PHP, MySQL, JavaScript, HTML, CSS, Bootstrap</p>
+</header>
+
+<a data-fancybox="opd-channeling" data-caption="opd-channeling01"
+   href="{% static 'images/programming/opd_channeling/opd-channeling01.png' %}" class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/opd_channeling/opd-channeling01.png' %}" alt="opd-channeling01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">OPD Channeling is a <b>fully functional E-Channeling Web Platform developed as a solo
+    second-year university assignment.</b> The system is designed to <b>digitize and streamline outpatient department
+    (OPD)
+    appointment management by connecting patients, doctors, and hospitals in a single online platform.</b></p>
+
+<p class="scroll-animate-up">The main focus of the application is to <b>manage e-channeling operations, including
+    patient
+    handling, doctor handling, and hospital handling.</b> Patients can register and book appointments with available
+    doctors. Doctors can register to offer their consultation services, manage their channels, and view upcoming
+    appointments. Hospitals can pre-register in the system, allowing their doctors and services to be listed.
+    An integrated admin panel allows administrators to manage patients, doctors, hospitals, and all appointment-related
+    operations, ensuring smooth coordination between stakeholders.</p>
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<ul>
+    <li class="scroll-animate-up">The application is built using a <b>PHP backend for server-side logic, combined with
+        HTML, CSS, JavaScript, and Bootstrap for a responsive and intuitive frontend. MySQL serves as the relational
+        database,</b> storing user profiles, hospital details, appointment records, and administrative data. The
+        application
+        follows a modular structure to separate concerns between the core functionalities of patients, doctors,
+        hospitals, and the admin panel.
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<p class="scroll-animate-up">Patient Side:</p>
+<ul>
+    <li class="scroll-animate-up">Registration, secure login, and profile</li>
+    <li class="scroll-animate-up">E-channeling functionality to book doctor appointments</li>
+    <li class="scroll-animate-up">View appointment history and details</li>
+</ul>
+<ul>
+
+    <p class="scroll-animate-up">Doctor Side:</p>
+    <li class="scroll-animate-up">Registration, secure login, and profile</li>
+    <li class="scroll-animate-up">Dashboard to view and manage booked appointments (channels)</li>
+    <li class="scroll-animate-up">Manage availability for patient bookings</li>
+</ul>
+<ul>
+
+    <p class="scroll-animate-up">Admin Side:</p>
+    <li class="scroll-animate-up">Secure registration, login, and profile</li>
+    <li class="scroll-animate-up">Hospital registration and management</li>
+    <li class="scroll-animate-up">Manage patient, doctor, and hospital records</li>
+    <li class="scroll-animate-up">Manage appointments and schedules</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As the sole developer of the project:</p>
+<ul>
+    <li class="scroll-animate-up">Designed and implemented the complete system architecture, including database schema
+        and user interface.
+    </li>
+    <li class="scroll-animate-up">Developed all backend functionalities in PHP and integrated them with the MySQL
+        database.
+    </li>
+    <li class="scroll-animate-up">Built a responsive frontend using HTML, CSS, JavaScript, and Bootstrap.</li>
+    <li class="scroll-animate-up">Implemented secure login and registration for patients and doctors.</li>
+    <li class="scroll-animate-up">Created the admin panel for centralized management of all entities.</li>
+    <li class="scroll-animate-up">Applied creative thinking, problem-solving, and situation-handling skills to address
+        challenges during development.
+    </li>
+    <li class="scroll-animate-up">Documented the entire project and successfully demonstrated it at the university.</li>
+</ul>
+
+<h3 class="scroll-animate-left">Academic Relevance</h3>
+<p class="scroll-animate-up">This project was successfully presented as the capstone project for the <b>second year of
+    my
+    university studies.</b> It demonstrated my ability to deliver a complete end-to-end web application independently,
+    showcasing skills in system design, backend and frontend development, database management, and user experience
+    design. The application reflects industry-relevant problem-solving and software engineering practices applicable to
+    real-world healthcare environments.</p>
+
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="opd-channeling"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/opd_channeling/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/opd_channeling/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

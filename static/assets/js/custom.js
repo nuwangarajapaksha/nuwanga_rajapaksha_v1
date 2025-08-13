@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function (e) {
             e.preventDefault();
 
-            const page = this.getAttribute("data-page"); // e.g. 'opd-channeling.html'
+            const page = this.getAttribute("data-page"); // e.g. 'opd_channeling.html'
 
             // Load modal body content from server
             fetch(`modal-content/${page}`)

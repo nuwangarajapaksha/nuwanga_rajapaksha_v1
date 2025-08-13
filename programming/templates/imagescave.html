@@ -1,0 +1,125 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">ImagesCave – Online Image Selling Platform</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Full-Stack Software Engineer (Solo Project)<br>
+        <b>Technology Stack:</b> PHP, MySQL, HTML, CSS, JavaScript, Bootstrap, PayHere Payment Gateway</p>
+</header>
+
+<a data-fancybox="imagescave" data-caption="imagescave01"
+   href="{% static 'images/programming/imagescave/imagescave01.png' %}" class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/imagescave/imagescave01.png' %}" alt="imagescave01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">ImagesCave is a <b>fully functional image selling web platform developed as my main
+    second-year project.</b> The platform provides an integrated marketplace for <b>photographers and graphic designers
+    to
+    upload and sell their work, while customers can browse, purchase, and download high-quality images.</b> The solution
+    is
+    designed with <b>two main interfaces: a contributor-facing portal for image management and sales, and a
+        customer-facing
+        interface for browsing and purchasing, supported by a robust admin panel for full platform management.</b></p>
+
+<p class="scroll-animate-up">The system supports <b>secure user authentication, streamlined image review and pricing
+    workflows, automated invoicing, and detailed sales reporting.</b> Its architecture emphasizes <b>ease of use,
+    transaction
+    security, and scalability</b> for future enhancements.</p>
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<ul>
+    <li class="scroll-animate-up">The <b>backend, developed in PHP, handles all core business logic, authentication, and
+        request processing, while integrating with a MySQL database to store and manage user accounts, product details,
+        transactions, and system records. The frontend, built with HTML, CSS, JavaScript, and Bootstrap, delivers a
+        responsive and user-friendly experience for buyers, contributors, and admins.</b> The platform is further
+        enhanced with <b>PayHere Payment Gateway integration for secure online payments and an email notification service to
+        automatically send invoices and updates to users. For deployment, the system is hosted on a shared hosting
+        server with a purchased domain, managed via cPanel.</b>
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<p class="scroll-animate-up">Contributor Side:</p>
+<ul>
+    <li class="scroll-animate-up">Registration, login and profile</li>
+    <li class="scroll-animate-up">Image upload with metadata and categorization</li>
+    <li class="scroll-animate-up">Dashboard to manage uploaded images and track sales</li>
+</ul>
+
+<p class="scroll-animate-up">Buyer Side:</p>
+<ul>
+    <li class="scroll-animate-up">Registration, login and profile</li>
+    <li class="scroll-animate-up">Advanced search and category-wise filtering</li>
+    <li class="scroll-animate-up">Product detail view with image previews</li>
+    <li class="scroll-animate-up">Add to cart, checkout, and PayHere-powered payment</li>
+    <li class="scroll-animate-up">Automated email invoice after purchase</li>
+    <li class="scroll-animate-up">Ability to submit suggestions and complaints</li>
+</ul>
+
+<p class="scroll-animate-up">Admin Side:</p>
+<ul>
+    <li class="scroll-animate-up">Secure registration, login and profile</li>
+    <li class="scroll-animate-up">Manage admin accounts</li>
+    <li class="scroll-animate-up">Buyer and contributor account management</li>
+    <li class="scroll-animate-up">Product management, including reviewing uploaded images, approving/rejecting
+        submissions, and setting prices
+    </li>
+    <li class="scroll-animate-up">Sales insights with recent product sales and detailed reports</li>
+    <li class="scroll-animate-up">Review and respond to complaints and suggestions</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As the sole developer:</p>
+<ul>
+    <li class="scroll-animate-up">Designed and implemented the full application, from database schema to UI design.</li>
+    <li class="scroll-animate-up">Developed frontend pages with HTML, CSS, JavaScript, and Bootstrap.</li>
+    <li class="scroll-animate-up">Implemented backend functionality in PHP, integrating MySQL for data persistence.</li>
+    <li class="scroll-animate-up">Built contributor and buyer workflows, including image upload, search, and purchase.
+    </li>
+    <li class="scroll-animate-up">Integrated PayHere Payment Gateway for secure online transactions.</li>
+    <li class="scroll-animate-up">Created automated email notifications for invoices and updates.</li>
+    <li class="scroll-animate-up">Implemented an admin review system for product approval and pricing.</li>
+    <li class="scroll-animate-up">Designed responsive layouts and optimized database queries for performance.</li>
+    <li class="scroll-animate-up">Deployed the platform to a shared hosting server, managed cPanel settings, configured
+        the database, and maintained the live site using a purchased domain.
+    </li>
+    <li class="scroll-animate-up">Conducted thorough testing to ensure reliability and usability.</li>
+    <li class="scroll-animate-up">Documented the system for academic submission and delivered a live demonstration.</li>
+</ul>
+
+<h3 class="scroll-animate-left">Academic Relevance</h3>
+<p class="scroll-animate-up">This project was successfully presented as my <b>main second-year software development
+    project at university,</b> demonstrating end-to-end full-stack development skills, integration of third-party
+    payment services, deployment on a live hosting environment, and
+    practical application of problem-solving and critical thinking abilities.</p>
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="imagescave"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/imagescave/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/imagescave/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

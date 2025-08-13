@@ -37,8 +37,28 @@ def modal_content(request, filename):
             'tech_icons': ['java', 'mysql', 'javascript', 'html5', 'css', 'bootstrap', 'android', 'firebase']
         },
         'pamunuwila_hardware.html': {
-            'images': [f'pamunuwila-hardware{i:02d}' for i in range(2, 36)],
+            'images': [f'pamunuwila-hardware{i:02d}' for i in range(2, 51)],
             'tech_icons': ['java', 'mysql']
+        },
+        'adyapana.html': {
+            'images': [f'adyapana{i:02d}' for i in range(2, 15)],
+            'tech_icons': ['java', 'mysql']
+        },
+        'opd_channeling.html': {
+            'images': [f'opd-channeling{i:02d}' for i in range(2, 26)],
+            'tech_icons': ['php', 'mysql', 'javascript', 'html5', 'css', 'bootstrap']
+        },
+        'imagescave.html': {
+            'images': [f'imagescave{i:02d}' for i in range(2, 16)],
+            'tech_icons': ['php', 'mysql', 'javascript', 'html5', 'css', 'bootstrap']
+        },
+        'election_sri_lanka.html': {
+            'images': [f'election-sri-lanka{i:02d}' for i in range(2, 25)],
+            'tech_icons': ['php', 'mysql', 'javascript', 'html5', 'css', 'bootstrap']
+        },
+        'health_first.html': {
+            'images': [f'health-first{i:02d}' for i in range(2, 18)],
+            'tech_icons': ['javascript', 'html5', 'css',]
         }
     }
 

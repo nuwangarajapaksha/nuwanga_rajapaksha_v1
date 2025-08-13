@@ -1,0 +1,91 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">Health First – Fitness Center Website</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Front-End Web Developer (Solo Project)<br>
+        <b>Technology Stack:</b> JavaScript, HTML, CSS</p>
+</header>
+
+<a data-fancybox="health-first" data-caption="health-first01"
+   href="{% static 'images/programming/health_first/health-first01.png' %}" class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/health_first/health-first01.png' %}" alt="health-first01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">Health First is a simple yet engaging website <b>developed for a local fitness center as my
+    very first university web development project.</b> The platform serves as an <b>online presence for the fitness center,
+    featuring essential information such as a gallery, class schedules, upcoming events, and contact details.</b> Designed
+    to be visually appealing and easy to navigate, the site enables visitors to explore the center’s offerings and stay
+    informed about activities and programs.</p>
+
+<p class="scroll-animate-up">The project was developed entirely using my basic front-end development knowledge at the
+    time, focusing on clean structure, intuitive navigation, and clear presentation of content. It marked my initial
+    step into practical web design and development, serving as a strong foundation for my later, more complex
+    projects.</p>
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<ul>
+    <li class="scroll-animate-up">The website is built entirely with <b>static front-end technologies — HTML for structure,
+        CSS for styling and layout, and JavaScript for interactivity.</b> All content is displayed directly in the pages
+        without backend integration or databases, ensuring quick load times and straightforward deployment. JavaScript
+        is used to enhance user experience through simple interactive elements, while CSS ensures a visually consistent
+        and responsive design.
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<ul>
+    <li class="scroll-animate-up">Showcases images of the fitness center’s facilities and activities.</li>
+    <li class="scroll-animate-up">Provides an overview of available fitness classes and their timings.</li>
+    <li class="scroll-animate-up">Lists special programs, workshops, and promotional events.</li>
+    <li class="scroll-animate-up">Includes address, phone number, and email for easy inquiries.</li>
+    <li class="scroll-animate-up">Optimized for viewing on desktops, tablets, and mobile devices.</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As the sole developer:</p>
+<ul>
+    <li class="scroll-animate-up">Designed the overall website layout and navigation flow.</li>
+    <li class="scroll-animate-up">Developed all pages using HTML, CSS, and JavaScript.</li>
+    <li class="scroll-animate-up">Created the gallery and events sections for visual engagement.</li>
+    <li class="scroll-animate-up">Implemented responsive design principles for multi-device compatibility.</li>
+    <li class="scroll-animate-up">Ensured cross-browser compatibility and basic accessibility.</li>
+    <li class="scroll-animate-up">Documented the project and delivered a live demonstration at the university.</li>
+</ul>
+
+<h3 class="scroll-animate-left">Academic Relevance</h3>
+<p class="scroll-animate-up">This project was successfully presented as <b>my first-year web development project,</b>
+    demonstrating my ability to apply foundational HTML, CSS, and JavaScript skills to create a functional,
+    user-friendly , and responsive website. It showcased my enthusiasm for web development and served as a stepping stone for more
+    advanced, full-stack projects in later years.</p>
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="health-first"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/health_first/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/health_first/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+

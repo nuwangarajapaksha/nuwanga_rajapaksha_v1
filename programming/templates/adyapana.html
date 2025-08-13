@@ -1,0 +1,102 @@
+{% load static %}
+<header>
+    <h2 class="scroll-animate-left">ADYAPANA – Educational Center Management System</h2>
+    <p class="scroll-animate-up"><b>My Role:</b> Full-Stack Software Engineer (Solo Project)<br>
+        <b>Technology Stack:</b> Java, Java Swing, Jasper Reports, JUnit</p>
+</header>
+
+<a data-fancybox="melioraa" data-caption="melioraa01"
+   href="{% static 'images/programming/adyapana/adyapana01.png' %}" class="image fit scroll-animate-down"
+   style="max-width: 60%;">
+    <img src="{% static 'images/programming/adyapana/adyapana01.png' %}" alt="adyapana01"/>
+</a>
+
+
+<h3 class="scroll-animate-left">Project Overview</h3>
+<p class="scroll-animate-up">ADYAPANA is a simple yet comprehensive <b>desktop application developed as part of my
+    first-year university assignment. Designed for educational centers,</b> the system streamlines administrative processes
+    by offering <b>centralized management of students, teachers, subjects, classes, and payments.</b> The system is designed to
+    be simple, intuitive, and efficient, helping educational centers streamline their day-to-day management while
+    ensuring <b>accurate record keeping and generating clear payment invoices</b> for students.</p>
+
+<h3 class="scroll-animate-left">Architecture</h3>
+<ul>
+    <li class="scroll-animate-up">The User Interface Layer is built with <b>Java Swing to provide a clean, easy-to-use
+        desktop experience,</b> while the Business Logic Layer, implemented in <b>Java, handles core processing, data
+        management, and validation.</b> The Database Layer is powered by <b>MySQL for reliable and scalable data storage.</b> The
+        Reporting Layer utilizes <b>Jasper Reports to generate well-formatted PDF documents for payment invoices.</b>
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Key Features</h3>
+<ul>
+    <li class="scroll-animate-up">Add, edit, search, and maintain detailed student profiles</li>
+    <li class="scroll-animate-up">Manage teacher information and assigned subjects/classes</li>
+    <li class="scroll-animate-up">Maintain subject catalogs and related details</li>
+    <li class="scroll-animate-up">Organize classes with schedules, subjects, and assigned teachers</li>
+    <li class="scroll-animate-up">Record, track, and report on student payments</li>
+    <li class="scroll-animate-up">Automated Jasper Reports for payment receipts</li>
+</ul>
+
+<h3 class="scroll-animate-left">My Role & Contributions</h3>
+<p class="scroll-animate-up">As the sole developer of ADYAPANA, I:</p>
+<ul>
+    <li class="scroll-animate-up">Designed and implemented the full application from scratch, including user interface
+        layouts.
+    </li>
+    <li class="scroll-animate-up">Created and optimized the database schema using MySQL to ensure efficient, reliable,
+        and scalable data storage.
+    </li>
+    <li class="scroll-animate-up">Developed all functional modules (student, teacher, subject, class, and payment
+        management) in Java and Java Swing.
+    </li>
+    <li class="scroll-animate-up">Designed and integrated Jasper Reports for professional PDF output.</li>
+    <li class="scroll-animate-up">Wrote and executed JUnit test cases to validate key functions and ensure quality.</li>
+    <li class="scroll-animate-up">Created a distributable .exe setup using Launch4j for seamless installation and
+        execution on Windows systems.
+    </li>
+    <li class="scroll-animate-up">Delivered the project with full technical documentation.</li>
+    <li class="scroll-animate-up">Applied creative thinking to design a logical, efficient workflow for managing
+        educational center operations.
+    </li>
+    <li class="scroll-animate-up">Solved implementation challenges and handled unforeseen situations independently,
+        ensuring timely delivery of the project.
+    </li>
+</ul>
+
+<h3 class="scroll-animate-left">Academic Relevance</h3>
+<p class="scroll-animate-up">ADYAPANA demonstrated my ability to develop a complete software solution independently,
+    from design to deployment, during my <b>first year at university.</b> The project enhanced my skills and laid a strong
+    foundation for my future work in software engineering.
+</p>
+
+
+<div class="box alt">
+    <div class="row gtr-30 gtr-uniform">
+        {% for image in images %}
+            <div class="col-3 scroll-animate-down">
+                <a
+                        data-fancybox="melioraa"
+                        data-caption="{{ image|title }}"
+                        href="{% static 'images/programming/adyapana/'|add:image|add:'.png' %}">
+                      <span class="image fit">
+                          <img src="{% static 'images/programming/adyapana/'|add:image|add:'.png' %}"
+                               alt="{{ image|title }}"/>
+                      </span>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <br><br>
+    <div class="row gtr-30 gtr-uniform">
+        {% for tech_icon in tech_icons %}
+            <div class="col-1 scroll-animate-down">
+                 <span class="image fit">
+                     <img src="{% static 'icons/'|add:tech_icon|add:'.svg' %}"
+                          alt="{{ tech_icon|title }}"/>
+                 </span>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
