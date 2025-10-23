@@ -5,10 +5,10 @@ from django.shortcuts import render
 # Create your views here.
 def programming(request):
     context = {
-        'tech_icons': ['java', 'spring-boot', 'python', 'django', 'fastapi', 'react',
-                       'php', 'android', 'html5', 'css', 'javascript', 'docker',
-                       'bootstrap', 'material-ui', 'git', 'github', 'gitlab', 'jira', 'aws',
-                       'mysql', 'mongodb', 'postman', 'swagger']
+        'tech_icons': ['java', 'javascript', 'python', 'php', 'go', 'spring-boot', 'react', 'django', 'fastapi',
+                       'vue-js', 'mysql', 'mongodb', 'firebase', 'html5', 'css', 'bootstrap', 'material-ui', 'aws',
+                       'google-cloud', 'docker', 'windows', 'android', 'git', 'github', 'gitlab', 'bitbucket', 'jira',
+                       'postman', 'swagger']
     }
 
     return render(request, 'programming.html', context)
@@ -58,7 +58,7 @@ def modal_content(request, filename):
         },
         'health_first.html': {
             'images': [f'health-first{i:02d}' for i in range(2, 18)],
-            'tech_icons': ['javascript', 'html5', 'css',]
+            'tech_icons': ['javascript', 'html5', 'css', ]
         }
     }
 
