@@ -92,7 +92,8 @@
                     <a href="https://www.facebook.com/mohan.hathnapitiya" target="_blank"
                        rel="noopener noreferrer">
                         <span class="image right" style="max-width: 20%;">
-                            <img src="{% static 'images/photography/mohan-hathnapitiya.png' %}" alt="Mr. Mohan Hathnapitiya"/>
+                            <img src="{% static 'images/photography/mohan-hathnapitiya.png' %}"
+                                 alt="Mr. Mohan Hathnapitiya"/>
                         </span>
                     </a>
                     During this course, I had the privilege of studying under <b><a
@@ -136,7 +137,7 @@
                         weddings,
                         cultural events, and concerts.
                     </li>
-                     <li class="scroll-animate-up"><b>Street Photography –</b> Candidly documenting everyday life,
+                    <li class="scroll-animate-up"><b>Street Photography –</b> Candidly documenting everyday life,
                         culture, and human interaction
                         in urban
                         environments.
@@ -210,6 +211,26 @@
                     and stay updated with global trends in photography and content creation.
                 </p>
                 <p class="scroll-animate-up">
+                    <a href="https://stock.adobe.com/lk/contributor/209350230/nuwangarajapaksha" target="_blank" rel="noopener noreferrer">
+                        <span class="image right" style="max-width: 10%;">
+                            <img src="{% static 'icons/adobe.svg' %}" alt="Adobe Stock"/>
+                        </span>
+                    </a>
+                    <a href="https://www.shutterstock.com/g/nuwangarajapaksha" target="_blank" rel="noopener noreferrer">
+                        <span class="image right" style="max-width: 10%;">
+                            <img src="{% static 'icons/shutterstock.svg' %}" alt="Shutterstock"/>
+                        </span>
+                    </a>
+                    In addition to content sharing, I also sell my photographs on <b><a
+                        href="https://www.shutterstock.com/g/nuwangarajapaksha" target="_blank"
+                        rel="noopener noreferrer">Shutterstock</a></b> and <b><a
+                        href="https://stock.adobe.com/lk/contributor/209350230/nuwangarajapaksha" target="_blank"
+                        rel="noopener noreferrer">Adobe Stock,</a></b>
+                    where my work reaches a global audience of photography enthusiasts, designers, and creative
+                    professionals. This experience has deepened my understanding of visual storytelling, market trends,
+                    and the business aspects of digital art.
+                </p>
+                <p class="scroll-animate-up">
                     Through <b>years of hands-on experience, self-education, and client interaction, I’ve built a
                     multifaceted career in photography that bridges the technical and artistic, the professional and the
                     personal.</b> Today, I continue to explore new styles and push creative boundaries, driven by the
@@ -239,7 +260,8 @@
                         {% for camera in cameras %}
                             <div class="col-4">
                                 <span class="image fit">
-                                    <img src="{% static 'images/photography/'|add:camera|add:'.png' %}" alt="{{ camera|title }}"/>
+                                    <img src="{% static 'images/photography/'|add:camera|add:'.png' %}"
+                                         alt="{{ camera|title }}"/>
                                 </span>
                             </div>
                         {% endfor %}
@@ -251,7 +273,8 @@
                         {% for lens in lenses %}
                             <div class="col-4">
                                 <span class="image fit">
-                                    <img src="{% static 'images/photography/'|add:lens|add:'.png' %}" alt="{{ lens|title }}"/>
+                                    <img src="{% static 'images/photography/'|add:lens|add:'.png' %}"
+                                         alt="{{ lens|title }}"/>
                                 </span>
                             </div>
                         {% endfor %}
@@ -290,11 +313,11 @@
 
         <!-- Posts -->
         <section class="posts">
-        <article class="scroll-animate-up">
+            <article class="scroll-animate-up">
                 <header>
                     <h2><a href="#">Landscape Photography</a></h2>
                 </header>
-               <a data-fancybox="landscape" data-caption="landscape01"
+                <a data-fancybox="landscape" data-caption="landscape01"
                    href="{% static 'images/photography/landscape/landscape01.png' %}" class="image fit"><img
                         src="{% static 'images/photography/landscape/landscape01.png' %}" alt="landscape01"/></a>
                 <div class="row gtr-30 gtr-uniform">
@@ -382,52 +405,52 @@
                     {% endfor %}
                 </div>
             </article>
-{#            <article class="scroll-animate-down">#}
-{#                <header>#}
-{#                    <h2><a href="#">Street Photography</a></h2>#}
-{#                </header>#}
-{#                <a data-fancybox="gallery" data-caption="wildlife01"#}
-{#                   href="{% static 'images/photography/wildlife/wildlife01.png' %}" class="image fit"><img#}
-{#                        src="{% static 'images/photography/wildlife/wildlife01.png' %}" alt="wildlife01"/></a>#}
-{#                <div class="row gtr-30 gtr-uniform">#}
-{#                    {% for image in wildlife_images %}#}
-{#                        <div class="col-6">#}
-{#                            <a#}
-{#                                    data-fancybox="gallery"#}
-{#                                    data-caption="{{ image|title }}"#}
-{#                                    href="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}">#}
-{#                                <span class="image fit">#}
-{#                                        <img src="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}"#}
-{#                                             alt="{{ image|title }}"/>#}
-{#                                </span>#}
-{#                            </a>#}
-{#                        </div>#}
-{#                    {% endfor %}#}
-{#                </div>#}
-{#            </article>#}
-{#         <article class="scroll-animate-down">#}
-{#                <header>#}
-{#                    <h2><a href="#">Food Photography</a></h2>#}
-{#                </header>#}
-{#                <a data-fancybox="gallery" data-caption="wildlife01"#}
-{#                   href="{% static 'images/photography/wildlife/wildlife01.png' %}" class="image fit"><img#}
-{#                        src="{% static 'images/photography/wildlife/wildlife01.png' %}" alt="wildlife01"/></a>#}
-{#                <div class="row gtr-30 gtr-uniform">#}
-{#                    {% for image in wildlife_images %}#}
-{#                        <div class="col-6">#}
-{#                            <a#}
-{#                                    data-fancybox="gallery"#}
-{#                                    data-caption="{{ image|title }}"#}
-{#                                    href="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}">#}
-{#                                <span class="image fit">#}
-{#                                        <img src="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}"#}
-{#                                             alt="{{ image|title }}"/>#}
-{#                                </span>#}
-{#                            </a>#}
-{#                        </div>#}
-{#                    {% endfor %}#}
-{#                </div>#}
-{#            </article>#}
+            {#            <article class="scroll-animate-down">#}
+            {#                <header>#}
+            {#                    <h2><a href="#">Street Photography</a></h2>#}
+            {#                </header>#}
+            {#                <a data-fancybox="gallery" data-caption="wildlife01"#}
+            {#                   href="{% static 'images/photography/wildlife/wildlife01.png' %}" class="image fit"><img#}
+            {#                        src="{% static 'images/photography/wildlife/wildlife01.png' %}" alt="wildlife01"/></a>#}
+            {#                <div class="row gtr-30 gtr-uniform">#}
+            {#                    {% for image in wildlife_images %}#}
+            {#                        <div class="col-6">#}
+            {#                            <a#}
+            {#                                    data-fancybox="gallery"#}
+            {#                                    data-caption="{{ image|title }}"#}
+            {#                                    href="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}">#}
+            {#                                <span class="image fit">#}
+            {#                                        <img src="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}"#}
+            {#                                             alt="{{ image|title }}"/>#}
+            {#                                </span>#}
+            {#                            </a>#}
+            {#                        </div>#}
+            {#                    {% endfor %}#}
+            {#                </div>#}
+            {#            </article>#}
+            {#         <article class="scroll-animate-down">#}
+            {#                <header>#}
+            {#                    <h2><a href="#">Food Photography</a></h2>#}
+            {#                </header>#}
+            {#                <a data-fancybox="gallery" data-caption="wildlife01"#}
+            {#                   href="{% static 'images/photography/wildlife/wildlife01.png' %}" class="image fit"><img#}
+            {#                        src="{% static 'images/photography/wildlife/wildlife01.png' %}" alt="wildlife01"/></a>#}
+            {#                <div class="row gtr-30 gtr-uniform">#}
+            {#                    {% for image in wildlife_images %}#}
+            {#                        <div class="col-6">#}
+            {#                            <a#}
+            {#                                    data-fancybox="gallery"#}
+            {#                                    data-caption="{{ image|title }}"#}
+            {#                                    href="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}">#}
+            {#                                <span class="image fit">#}
+            {#                                        <img src="{% static 'images/photography/wildlife/'|add:image|add:'.png' %}"#}
+            {#                                             alt="{{ image|title }}"/>#}
+            {#                                </span>#}
+            {#                            </a>#}
+            {#                        </div>#}
+            {#                    {% endfor %}#}
+            {#                </div>#}
+            {#            </article>#}
         </section>
 
         <footer></footer>
