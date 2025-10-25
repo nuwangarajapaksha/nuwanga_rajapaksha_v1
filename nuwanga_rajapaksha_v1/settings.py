@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
 from pathlib import Path
+
 from concurrent_log_handler import ConcurrentTimedRotatingFileHandler
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -36,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
     'portfolio',
     'programming',
     'photography',
@@ -110,7 +112,6 @@ TIME_ZONE = 'UTC'
 # TIME_ZONE = 'Asia/Colombo'
 USE_TZ = True
 
-
 USE_I18N = True
 
 USE_TZ = True
@@ -137,7 +138,6 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'nuwangarajapaksha@gmail.com'
 EMAIL_HOST_PASSWORD = 'upxu fvij vdxq qfoi'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-
 
 # LOG_DIR = os.path.join(BASE_DIR, 'logs')
 # if not os.path.exists(LOG_DIR):
