@@ -48,6 +48,12 @@ On Windows PowerShell:
 .\venv\Scripts\Activate.ps1
 ```
 
+On Windows cmd:
+
+```bash
+venv\Scripts\activate
+```
+
 On Unix or macOS terminal:
 
 ```bash
